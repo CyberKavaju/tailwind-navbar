@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="/dist/output.css" rel="stylesheet">
+  <script src="menu.js" defer></script>
 </head>
 
 <body>
-  <nav class="bg-gray-100 text-gray-700">
-    <div class="max-w-5xl mx-auto border">
+  <nav class=" bg-gray-100 text-gray-700">
+    <div class="px-4 md:px-1 max-w-5xl mx-auto border">
       <div class="flex justify-between">
         <div class="flex space-x-4 ">
           <!-- logo -->
@@ -28,6 +30,7 @@
             <a href="#" class="py-4 px-3 hover:text-gray-900">Home</a>
             <a href="#" class="py-4 px-3 hover:text-gray-900">Blog</a>
           </div>
+
         </div>
         <!-- sec nav -->
         <div class="hidden md:flex items-center space-x-1">
@@ -35,9 +38,27 @@
           <a href="" class="py-3 px-3 bg-green-600 text-white rounded hover:bg-green-700 transition duration-300">Sign
             Up</a>
         </div>
+        <!-- mobile hamburger -->
+        <div class="md:hidden flex items-center py-3 px-3 cursor-pointer ">
+          <button class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-10 h-10 hover:bg-gray-200 rounded p-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+
+        </div>
       </div>
     </div>
     <!-- mobile nav -->
+    <div class="mobile-menu hidden md:hidden transition duration-500">
+      <a href="" class="block text-center py-4 px-3 hover:text-gray-900 hover:bg-gray-200">Home</a>
+      <a href="" class="block text-center py-4 px-3 hover:text-gray-900 hover:bg-gray-200">Blog</a>
+      <a href="" class="block text-center py-4 px-3 hover:text-gray-900 hover:bg-gray-200">Login</a>
+      <a href=""
+        class="block text-center py-3 px-3 bg-green-600 text-white hover:bg-green-700 transition duration-300">Sign
+        up</a>
+    </div>
   </nav>
 </body>
 
